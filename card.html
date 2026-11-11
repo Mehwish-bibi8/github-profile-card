@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GitHub Profile Card</title>
+<style>
+  body { background:#0d1117; font-family:Segoe UI,Arial,sans-serif;
+         display:flex; justify-content:center; padding:40px; }
+  .card { background:#161b22; color:#e6edf3; width:420px; padding:30px;
+          border-radius:16px; border:1px solid #30363d; }
+  .top { text-align:center; }
+  .top img { width:110px; border-radius:50%; border:3px solid #58a6ff; }
+  h1 { margin:12px 0 0; font-size:24px; }
+  .user { color:#8b949e; }
+  .stats { display:flex; justify-content:space-around; margin:20px 0; }
+  .stats div { text-align:center; }
+  .stats b { display:block; font-size:22px; color:#58a6ff; }
+  h2 { font-size:15px; color:#8b949e; text-transform:uppercase; }
+  ul { list-style:none; padding:0; }
+  li { display:flex; justify-content:space-between; padding:6px 0;
+       border-bottom:1px solid #21262d; }
+  li span { color:#8b949e; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top">
+    <img src="https://avatars.githubusercontent.com/u/1024025?v=4">
+    <h1>Linus Torvalds</h1>
+    <div class="user">@torvalds</div>
+    <p></p>
+  </div>
+  <div class="stats">
+    <div><b>331620</b>Followers</div>
+    <div><b>0</b>Following</div>
+    <div><b>12</b>Repos</div>
+  </div>
+  <h2>Top repos</h2>
+  <ul><li>linux <span>&#9733; 255330</span></li><li>AudioNoise <span>&#9733; 4532</span></li><li>GuitarPedal <span>&#9733; 2492</span></li><li>uemacs <span>&#9733; 2198</span></li><li>test-tlb <span>&#9733; 1083</span></li></ul>
+  <h2>Languages</h2>
+  <ul><li>C <span>10 repos</span></li><li>C++ <span>1 repos</span></li><li>OpenSCAD <span>1 repos</span></li></ul>
+</div>
+</body>
+</html>
