@@ -3,6 +3,9 @@
 A Python command-line tool that shows a GitHub user's profile summary
 using live data from the GitHub REST API.
 
+## Preview
+![Compare two developers](preview.png)
+
 ## What it does
 - Shows name, bio, followers, following and public repo count
 - Lists the top 5 repositories by stars
