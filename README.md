@@ -1,7 +1,7 @@
 # GitHub Profile Card
 
-A Python command-line tool that shows a GitHub user's profile summary
-using live data from the GitHub REST API.
+A Python tool that shows a GitHub user's profile summary
+using live data from the public GitHub REST API.
 
 ## Preview
 ![Compare two developers](preview.png)
@@ -9,7 +9,8 @@ using live data from the GitHub REST API.
 ## What it does
 - Shows name, bio, followers, following and public repo count
 - Lists the top 5 repositories by stars
-- Shows the most-used programming languages
+- Shows the most-used programming languages with percentage bars
+- Web interface built with Flask: search a user, compare two users, dark/light theme
 - Handles invalid usernames and API rate limits
 
 ## Installation
@@ -25,10 +26,21 @@ using live data from the GitHub REST API.
    ```
 
 ## Usage
+
+### Command line
 ```
 python main.py USERNAME
 ```
 Or run `python main.py` and type a username when asked.
+
+### Web app
+```
+python app.py
+```
+Open http://127.0.0.1:5000 in your browser.
+- **Search:** type any GitHub username to see their live profile card
+- **Compare:** compare two developers side by side
+- **Theme:** switch between dark and light mode
 
 ## Sample output
 ```
@@ -54,4 +66,5 @@ Most-used languages:
 ```
 
 ## API used
-[GitHub REST API](https://docs.github.com/en/rest) (no API key needed, limit of 60 requests per hour)
+[GitHub REST API](https://docs.github.com/en/rest) (no API key needed, limit of 60 requests per hour).
+Data is fetched live from the public API.
